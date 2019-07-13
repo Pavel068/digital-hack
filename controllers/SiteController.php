@@ -94,4 +94,10 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionAnalyze()
+    {
+        $graphId = Yii::$app->getRequest()->getQueryParam('id');
+        return $this->render('analyze' . $graphId);
+    }
 }

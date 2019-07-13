@@ -39,7 +39,13 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Анализ', 'url' => ['/site/index']],
+            ['label' => 'Рекомендации', 'url' => ['/site/index']],
+            ['label' => 'Анализ', 'items' => [
+                ['label' => 'Динамика отзывов', 'url' => ['/site/analyze?id=1']],
+                ['label' => 'Запросы услуг', 'url' => ['/site/analyze?id=2']],
+                ['label' => 'Неоказанные услуги', 'url' => ['/site/analyze?id=3']],
+            ]],
+            ['label' => 'Комментарии', 'url' => ['/site/comments']],
             ['label' => 'Настройки', 'items' => [
                 ['label' => 'Общие', 'url' => '/settings/index'],
                 ['label' => 'Услуги', 'url' => '/services/index'],
@@ -52,7 +58,7 @@ AppAsset::register($this);
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post')
                 . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
+                    'Выход (' . Yii::$app->user->identity->username . ')',
                     ['class' => 'btn btn-link logout']
                 )
                 . Html::endForm()

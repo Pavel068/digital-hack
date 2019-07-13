@@ -96,6 +96,10 @@ a.desc:after {
     border: none;
 }
 
+.logo {
+    width: 25px;
+}
+
 @media(max-width:767px) {
     .nav li > form > button.logout {
         display:block;
@@ -112,4 +116,8 @@ a.desc:after {
 
 .nav > li > form > button.logout:focus {
     outline: none;
+}
+
+.navbar-header {
+    margin-top: -6px;
 }

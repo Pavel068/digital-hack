@@ -41,9 +41,9 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Рекомендации', 'url' => ['/site/index']],
             ['label' => 'Анализ', 'items' => [
-                ['label' => 'Динамика отзывов', 'url' => ['/site/analyze?id=1']],
-                ['label' => 'Запросы услуг', 'url' => ['/site/analyze?id=2']],
-                ['label' => 'Неоказанные услуги', 'url' => ['/site/analyze?id=3']],
+                ['label' => 'Динамика отзывов', 'url' => ['/analyze/reviews']],
+                ['label' => 'Запросы услуг', 'url' => ['/analyze/requests']],
+                ['label' => 'Неоказанные услуги', 'url' => ['/analyze/failed-services']],
             ]],
             ['label' => 'Комментарии', 'url' => ['/site/comments']],
             ['label' => 'Настройки', 'items' => [

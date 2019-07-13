@@ -41,9 +41,9 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Анализ', 'url' => ['/site/index']],
             ['label' => 'Настройки', 'items' => [
-                ['label' => 'Общие', 'url' => '/settings/common'],
-                ['label' => 'Услуги', 'url' => '/settings/services'],
-                ['label' => 'БД парсера', 'url' => '/settings/parser'],
+                ['label' => 'Общие', 'url' => '/settings/index'],
+                ['label' => 'Услуги', 'url' => '/services/index'],
+                ['label' => 'БД парсера', 'url' => '/parser/index'],
             ]],
             ['label' => 'Поддержка', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (

@@ -4,19 +4,9 @@ namespace app\controllers;
 
 class SettingsController extends \yii\web\Controller
 {
-    public function actionCommon()
+    public function actionIndex()
     {
-        return $this->render('common');
-    }
-
-    public function actionParser()
-    {
-        return $this->render('parser');
-    }
-
-    public function actionServices()
-    {
-        return $this->render('services');
+        return $this->render('index');
     }
 
 }

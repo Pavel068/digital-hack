@@ -45,7 +45,7 @@ AppAsset::register($this);
                 ['label' => 'Запросы услуг', 'url' => ['/analyze/requests']],
                 ['label' => 'Неоказанные услуги', 'url' => ['/analyze/failed-services']],
             ]],
-            ['label' => 'Комментарии', 'url' => ['/site/comments']],
+            ['label' => 'Отзывы', 'url' => ['/site/reviews']],
             ['label' => 'Настройки', 'items' => [
                 ['label' => 'Общие', 'url' => '/settings/index'],
                 ['label' => 'Услуги', 'url' => '/services/index'],

@@ -131,3 +131,15 @@ table th:nth-child(1), table td:nth-child(1) {
 /*    background-color: #212529;*/
 /*    color: #ffffff;*/
 /*}*/
+
+.positive {
+    background-color: #b2ff9f;
+    margin: 5px;
+    padding: 5px;
+}
+
+.negative {
+    background-color: #ffa9af;
+    margin: 5px;
+    padding: 5px;
+}

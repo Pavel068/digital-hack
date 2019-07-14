@@ -95,4 +95,9 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
+    public function actionReviews()
+    {
+        return $this->render('reviews');
+    }
+
 }

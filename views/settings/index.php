@@ -4,6 +4,8 @@ use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 use yii\helpers\Html;
 use \app\models\CommonSettings;
+use dosamigos\chartjs\ChartJs;
+use app\models\Analyze;
 
 
 /* @var $this yii\web\View */

@@ -164,6 +164,10 @@ table th:nth-child(1), table td:nth-child(1) {
     word-break: break-word;
 }
 
+.problem > div:nth-child(2) {
+    font-weight: bold;
+}
+
 input[type="checkbox"]:checked + label {
     background-color: #b2ff9f;
 }
